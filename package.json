@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "create-types": "graphql-codegen"
+    "create-types": "graphql-codegen",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
@@ -27,7 +29,17 @@
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.7",
     "@graphql-codegen/cli": "2.16.2",
-    "@graphql-codegen/client-preset": "^1.2.4"
+    "@graphql-codegen/client-preset": "^1.2.4",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0"
   }
 }
