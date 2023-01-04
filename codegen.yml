@@ -1,0 +1,12 @@
+overwrite: true
+schema: "http://127.0.0.1:1337/graphql"
+documents:
+    - "./lib/queries.tsx"
+generates:
+    ./src/graphqlTypes.ts:
+        plugins:
+            - typescript
+            - typescript-operations
+hooks:
+    afterAllFileWrite:
+        - prettier --write
