@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client'
 
 
-export const Navigation = gql`
+export const NavigationQuery = gql`
 query getNavigation {
   renderNavigation(
     navigationIdOrSlug: "main-navigation"
@@ -21,7 +21,7 @@ query getNavigation {
 }
 `
 
-export const Pages = gql`
+export const PagesQuery = gql`
 query getPages {
   pages {
     data {

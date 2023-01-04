@@ -1,11 +1,12 @@
 import { useQuery } from '@apollo/client'
 
-import { Pages } from '../lib/queries'
+import { PagesQuery } from '../lib/queries'
+import Navigation from '../src/components/Navigation/Navigation'
 
 import type { PageEntity } from '../src/graphqlTypes'
 
-export default function Home() {
-  const { loading, error, data } = useQuery(Pages)
+const Home = () => {
+  const { loading, error, data } = useQuery(PagesQuery)
 
 
   if (loading) return <p>Loading...</p>
@@ -23,6 +24,10 @@ export default function Home() {
           </div>
         )
       })}
+      <Navigation />
     </>
   )
 }
+
+
+export default Home
