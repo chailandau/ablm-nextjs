@@ -1,0 +1,32 @@
+@import "../../../styles/fonts";
+@import "../../../styles/mixins";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font-bitter-semibold;
+}
+
+.sm {
+    @include font(30, 36);
+    @include tablet {
+        @include font(35, 42);
+    }
+}
+
+.md {
+    @include font(35, 42);
+    @include tablet {
+        @include font(50, 60);
+    }
+}
+
+.lg {
+    @include font(40, 48);
+    @include tablet {
+        @include font(60, 72);
+    }
+}

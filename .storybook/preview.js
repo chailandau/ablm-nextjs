@@ -1,9 +1,11 @@
+import "../styles/main.scss";
+
 export const parameters = {
     backgrounds: { disable: true },
     options: {
         storySort: {
             method: "alphabetical",
-            order: ["Guides", ["Get Started", "*"], "Atoms", "Molecules", "Components"],
+            order: ["Atoms", "Molecules", "Components"],
         },
         showPanel: true,
     },

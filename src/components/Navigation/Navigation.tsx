@@ -12,16 +12,17 @@ const Navigation = () => {
 
     return (
         <ul>
-            {!loading && data?.renderNavigation.map((navItem: NavigationItem) => {
-                return (
-                    navItem.path &&
-                    <li key={navItem.id}>
-                        <a href={navItem.path}>
-                            {navItem.title}
-                        </a>
-                    </li>
-                )
-            })}
+            {!loading &&
+                data?.renderNavigation.map((navItem: NavigationItem) => {
+                    return (
+                        navItem.path &&
+                        <li key={navItem.id}>
+                            <a href={navItem.path}>
+                                {navItem.title}
+                            </a>
+                        </li>
+                    )
+                })}
         </ul>
     )
 }

@@ -1,0 +1,20 @@
+@import "../../../styles/fonts";
+@import "../../../styles/mixins";
+
+.sm {
+    @include font-bitter-medium;
+    @include font(20, 24);
+}
+
+.md {
+    @include font-jost-book;
+    @include font(20, 30);
+    @include tablet {
+        @include font(28, 36);
+    }
+}
+
+.lg {
+    @include font-jost-medium;
+    @include font(30, 34);
+}

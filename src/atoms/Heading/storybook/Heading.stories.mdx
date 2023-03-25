@@ -1,0 +1,32 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import Heading from "../Heading";
+import * as stories from "./Heading.stories.tsx";
+
+<Meta title="Atoms/Heading" component={Heading} argTypes={stories.headingArgTypes} />
+
+# Heading Atom
+
+<br />
+
+### Heading
+
+Text is supplied as a child to the `Heading` component (labelled as the `heading` prop below).
+
+### Tag
+
+Select a semantic heading tag using best practices to keep the page accessible. Read this article from [The A11y Project]('https://www.a11yproject.com/posts/how-to-accessible-heading-structure/#best-practices-summarized') for more information on best practices.
+
+If no tag is selected, the `Heading` atom will default to using `h2`.
+
+### Size
+
+Select a size for the `Heading` atom. If no size is selected, it will default to `md`.
+
+<Canvas>
+    <Story name="Heading" story={stories.heading} />
+</Canvas>
+
+### Props
+
+<ArgsTable story="Heading" />

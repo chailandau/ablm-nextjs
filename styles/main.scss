@@ -1,11 +1,7 @@
-@import "global/mixins";
-@import "global/variables";
-@import "global/fonts";
+@import "./mixins";
+@import "./variables";
+@import "./fonts";
 
-@import "global/reset";
+@import "./reset";
 
-@import "global/base";
-
-// components
-@import "components/header";
-@import "components/footer";
+@import "./base";

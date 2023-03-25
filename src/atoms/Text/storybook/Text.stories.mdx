@@ -1,0 +1,30 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import Text from "../Text";
+import * as stories from "./Text.stories.tsx";
+
+<Meta title="Atoms/Text" component={Text} argTypes={stories.textArgTypes} />
+
+# Text Atom
+
+<br />
+
+### Text
+
+Text is supplied as a child to the `Text` component (labelled as the `text` prop below).
+
+### Tag
+
+You can choose to use the `p` or `span` tag for flexibility. If no tag is defined, it will default to `p`.
+
+### Size
+
+Select a size for the `Text` atom. If no size is selected, it will default to `md`.
+
+<Canvas>
+    <Story name="Text" story={stories.text} />
+</Canvas>
+
+### Props
+
+<ArgsTable story="Text" />

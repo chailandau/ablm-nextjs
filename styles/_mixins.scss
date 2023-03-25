@@ -1,16 +1,16 @@
 // set base font size
 $base-font-size: 16;
 
-// to rem function
+// px to rem
 @function rem($val) {
-    @return ($val/$base-font-size) + rem;
+    @return calc($val/$base-font-size) + rem;
 }
 
-// font size, tracking, leading
-@mixin font($font-size, $tracking, $leading) {
-    font-size: ($font-size / $base-font-size) + rem;
+// set font size, leading, tracking
+@mixin font($font-size, $leading, $tracking: 0) {
+    font-size: calc($font-size / $base-font-size) + rem;
     letter-spacing: $tracking + px;
-    line-height: ($leading / $base-font-size) + rem;
+    line-height: calc($leading / $base-font-size) + rem;
 }
 
 // media queries
