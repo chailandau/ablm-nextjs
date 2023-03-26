@@ -7,8 +7,8 @@ export const textSizes = ['sm', 'md', 'lg'] as const;
 export const textTags = ['span', 'p'] as const;
 
 interface TextProps {
-    tag: typeof textTags[number];
-    size: typeof textSizes[number];
+    tag?: typeof textTags[number];
+    size?: typeof textSizes[number];
     children: string;
 }
 
